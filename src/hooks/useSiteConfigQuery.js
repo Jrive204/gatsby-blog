@@ -1,5 +1,6 @@
 import { useStaticQuery, graphql } from "gatsby"
 
+// GraphQL used to quickfill alot of these queries
 export const useSiteConfigQuery = () => {
   const data = useStaticQuery(graphql`
     query ConfigQuery {

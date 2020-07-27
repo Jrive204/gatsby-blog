@@ -3,6 +3,8 @@ import { ThemeProvider } from "styled-components"
 // hooks
 import { useMetaDataQuery } from "hooks/useMetaDataQuery"
 
+// Components
+import Header from "components/Header"
 import { GlobalStyles, lightTheme, darkTheme } from "styles/GlobalStyles"
 
 const Layout = ({ children }) => {
@@ -11,7 +13,7 @@ const Layout = ({ children }) => {
   return (
     <ThemeProvider theme={darkTheme}>
       <GlobalStyles />
-      Layout Component
+      <Header siteTitle={data.title} />
       {children}
     </ThemeProvider>
   )
